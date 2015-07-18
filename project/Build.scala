@@ -6,7 +6,7 @@ object AwscalaProject extends Build {
   lazy val awsJavaSdkVersion = "1.10.1"
 
   lazy val root = (project in file(".")).settings(mainSettings).dependsOn(sshScala)
-  lazy val sshScala = uri("git://github.com/sirthias/scala-ssh.git")
+  lazy val sshScala = uri("git://github.com/centaure/scala-ssh.git")
   // Project("root", file("."), settings = mainSettings)
   lazy val mainSettings = Seq(
     organization := "com.github.seratch",
