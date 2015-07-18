@@ -2,6 +2,7 @@ package awscala.ec2
 
 import awscala._
 import com.amazonaws.services.{ ec2 => aws }
+import com.decodified.scalassh._
 
 case class InstanceWithKeyPair(
     override val underlying: aws.model.Instance,
@@ -9,7 +10,7 @@ case class InstanceWithKeyPair(
     user: String,
     connectionTimeout: Int) extends Instance(underlying) {
 
-  import com.decodified.scalassh._
+  
 
   def ssh[T](f: SshClient => SSH.Result[T]) = SSH[T](publicDnsName, provider(keyPairFile))(f)
 
