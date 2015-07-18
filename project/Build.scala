@@ -27,7 +27,7 @@ object AwscalaProject extends Build {
       "com.amazonaws"    %  "aws-java-sdk-simpledb" % awsJavaSdkVersion,
       "joda-time"        %  "joda-time"       % "2.8.1",
       "org.joda"         %  "joda-convert"    % "1.7",
-      "com.decodified"   %% "scala-ssh"       % "0.7.0"  % "provided",
+      "com.decodified"   %% "scala-ssh"       % "0.7.1"  % "provided",
       "org.bouncycastle" %  "bcprov-jdk16"    % "1.46"   % "provided",
       "ch.qos.logback"   %  "logback-classic" % "1.1.3"  % "test",
       "org.scalatest"    %% "scalatest"       % "2.2.5"  % "test"
